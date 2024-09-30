@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bx5w2o2ecfpbj"]
+
+[ext_resource type="Texture2D" uid="uid://dnku55dcgmtb2" path="res://icon.svg" id="1_wode7"]
+[ext_resource type="Script" path="res://icon.gd" id="2_nvl2n"]
+[ext_resource type="Texture2D" uid="uid://cmxeil5rp10r2" path="res://static-assets-upload10249916043484365687.webp" id="3_b3ip8"]
+[ext_resource type="Script" path="res://sprite_2.gd" id="3_qg4oe"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(2, -3)
+scale = Vector2(8.97656, 5.125)
+texture = ExtResource("1_wode7")
+centered = false
+script = ExtResource("2_nvl2n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(874.875, 477)
+scale = Vector2(0.206954, 0.192382)
+texture = ExtResource("3_b3ip8")
+script = ExtResource("3_qg4oe")
