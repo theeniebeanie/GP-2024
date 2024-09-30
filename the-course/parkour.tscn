@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch72fr8bkl5fv"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_1b4ci"]
+[ext_resource type="Script" path="res://player.gd" id="2_khd7c"]
+[ext_resource type="PackedScene" uid="uid://bn3hvh43n1h5j" path="res://bullet.tscn" id="3_dgkkd"]
+[ext_resource type="Texture2D" uid="uid://ctx4tj52u0886" path="res://assets/PNG/Sprites/Ships/spaceShips_008.png" id="3_u7cb5"]
+
+[node name="root" type="Node2D"]
+script = ExtResource("1_1b4ci")
+
+[node name="player2" type="CharacterBody2D" parent="." node_paths=PackedStringArray("bullet_spawnpoint")]
+position = Vector2(525, 308)
+script = ExtResource("2_khd7c")
+bullet_scene = ExtResource("3_dgkkd")
+bullet_spawnpoint = NodePath("we need more bullets")
+
+[node name="Sprite2D" type="Sprite2D" parent="player2"]
+texture = ExtResource("3_u7cb5")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="player2"]
+position = Vector2(-1, 1)
+polygon = PackedVector2Array(-50, 33, -42, 41, -35, 41, -33, 29, -31, 34, -25, 34, -23, 25, -25, 15, -14, 15, -9, 32, 10, 32, 13, 16, 26, 17, 25, 24, 26, 33, 31, 34, 33, 30, 35, 41, 42, 41, 49, 32, 41, -23, 23, -32, 22, -40, 10, -40, 7, -33, -6, -33, -9, -40, -21, -40, -22, -32, -41, -22)
+
+[node name="we need more bullets" type="Marker2D" parent="player2"]
