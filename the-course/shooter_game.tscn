@@ -12,7 +12,8 @@ script = ExtResource("1_c5ar1")
 [node name="dude" parent="." instance=ExtResource("2_gm47b")]
 rotation = 5.68262
 collision_mask = 5
-color = Color(0, 1, 0.25, 0.847059)
+line_size = 10
+color = Color(0.358167, 0.638277, 0.908919, 1)
 speed = 500.0
 lives = 10
 explosion = ExtResource("3_c5ar1")
