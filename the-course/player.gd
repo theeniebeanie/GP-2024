@@ -34,6 +34,7 @@ func _physics_process(delta: float) -> void:
 	rotate(rot)
 	
 	var f = Input.get_axis("move_backwards", "move_forwards")
+	Vector2(f)
 
 	var vel = - transform.y * f * SPEED
 	print(transform.y)
