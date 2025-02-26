@@ -34,21 +34,21 @@ offset_left = 1.0
 offset_top = 110.0
 offset_right = 331.0
 offset_bottom = 185.0
-text = "LIVES: 10"
+text = "Lives: 10"
 
 [node name="ammo" type="Label" parent="CanvasLayer"]
 offset_left = 8.0
 offset_top = 221.0
 offset_right = 338.0
 offset_bottom = 296.0
-text = "AMMO: 100"
+text = "Ammo: 100"
 
 [node name="level" type="Label" parent="CanvasLayer"]
 offset_left = 8.0
 offset_top = 320.0
 offset_right = 338.0
 offset_bottom = 395.0
-text = "LEVEL: 0"
+text = "Level: 0"
 
 [node name="target" type="Label" parent="CanvasLayer"]
 offset_left = 14.0
